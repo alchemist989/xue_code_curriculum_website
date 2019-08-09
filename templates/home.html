@@ -1,0 +1,98 @@
+{% extends "index.html" %}
+{% block content %}
+<section class="hero is-primary is-bold is-medium">
+  <div class="hero-body">
+    <div class="container">
+      <div class="columns is-variable is-8 is-centered">
+        <div class="column is-6" style="text-align:center">
+          <h1 class="title has-text-weight-light" style="font-size: 75px">
+            Volunteer Matching
+          </h1>
+          <h2 class="subtitle has-text-weight-light" style="margin-top:5%">
+            Come to Volunteer Matching to find different volunteering 
+            opportunity around your area. Explore new places, meet new friends,
+            and help the community.
+          </h2>
+          <a href='/register' class="button is-large" 
+          style="border-color:#ff5533; background-color:#ff5533; color: #ececec; margin-top: 10%;">
+            Recruit Volunteers
+          </a>
+        </div>
+        <div class="column is-5">
+          
+          <img style="margin-left:70px; height:335px; border-radius:6px" src="static/images/blue_helper.jpg">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="container" style="margin-top:80px">
+  <div class="columns is-centered is-variable is-8">
+    <div class="column is-5">
+      <figure class="image">
+        <img class="is-rounded" src="static/images/volunteer.jpg">
+      </figure>
+    </div>
+    <div class="column is-6">
+      <div style="margin-left:5%">
+        <h1 class="title has-text-weight-light is-size-1">
+          Transform your Explore Volunteering Experience
+        </h1>
+        <h3 class="has-text-weight-light">
+          Find countless of events and organizations hosting activities. We guarantee that you will be able to find 
+          the experience of a lifetime. Without thousands of students and parents on the website, and hundreds
+          of different Non-profits, you will be able to connect with anyone you'll like. Browse through 
+          the listings below.
+        </h3>
+      </div>
+      <div style="text-align: center">
+        <a href='/listings' class="button is-large"
+          style="border-color:#ff5533; background-color:#ff5533; color: #ececec; margin-top: 6%;">
+          Browse Opporunities
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+<nav class="level" 
+  style="margin-top:90px; padding: 2%; border-bottom: 1px solid #ececec; border-top:1px solid #ececec">
+  <div class="level-item has-text-centered">
+    <div>
+      <p class="heading">Opporunities</p>
+      <p class="title">3,456</p>
+    </div>
+  </div>
+  <div class="level-item has-text-centered">
+    <div>
+      <p class="heading">Organizations</p>
+      <p class="title">123</p>
+    </div>
+  </div>
+  <div class="level-item has-text-centered">
+    <div>
+      <p class="heading">Volunteers</p>
+      <p class="title">456K</p>
+    </div>
+  </div>
+</nav>
+<div class="container" style="margin-top:90px">
+  <div class="columns is-centered is-variable is-8">
+    <div class="column is-6">
+      <h1 class="title has-text-weight-light is-size-1">
+        Meet Amazing People on Volunteer Matching!
+      </h1>
+      <h3 class="has-text-weight-light">
+        Find all different types of people from all different backgrounds. Every
+        volunteer experience you particpate will allow you to meet all kinds of 
+        people while learning various cool new skills or helping the environment out.
+      </h3>
+    </div>
+    <div class="column is-5">
+      <figure class="image">
+        <img class="is-rounded" src="static/images/paper.jpg">
+      </figure>
+    </div>
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,81 @@
+{% extends "index.html" %}
+{% block content %}
+<!-- Title Area -->
+<section class="section comments-section-background ">
+    <div class="container">
+        <h1 class="comment-headers"> Post Comments </h1>
+        <br>
+        <div class="card comment-card">
+            <div class="card-content">
+                <div class="field">
+                    <label class="label">Username</label>
+                    <div class="control has-icons-left">
+                        <input id="comment-user" class="input" type="text" placeholder="Username" value="">
+                        <span class="icon is-small is-left">
+                            <i class="fas fa-user"></i>
+                        </span>
+                    </div>
+                </div>
+                <div class="field">
+                    <label class="label">Email</label>
+                    <div class="control has-icons-left">
+                        <input id="comment-email" class="input" type="email" placeholder="Email input" value="">
+                        <span class="icon is-small is-left">
+                            <i class="fas fa-envelope"></i>
+                        </span>
+                    </div>
+                </div>
+                <div class="field">
+                    <label class="label">Comment</label>
+                    <div class="control">
+                        <textarea id="comment-section" class="textarea comment-error" placeholder="Comment"></textarea>
+                    </div>
+                </div>
+                <div class="field is-grouped">
+                    <div class="control">
+                        <button id="comment-button" class="button is-warning">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section comments-section-background ">
+    <div class="container">
+        <h1 class="comment-headers"> Comment </h1>
+        <br>
+        {% for comment in comments %}
+        <div class="card comment-card">
+            <div class="card-content">
+                <article class="media">
+                    <figure class="media-left">
+                        <p class="image is-64x64">
+                            <img src="../static/images/user.svg">
+                        </p>
+                    </figure>
+                    <div class="media-content">
+                        <div class="content">
+                            <p>
+                                <strong> {{ comment.username }} </strong> {{ comment.email }}
+                                <br>
+                                {{ comment.comment }}
+                                <br>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="media-right">
+                        <button id="delete-comment-btn-{{ comment.id }}" class="delete delete-comment comment-delete-error" value="{{ comment.id }}"></button>
+                    </div>
+                </article>
+            </div>
+        </div>
+        <br>
+        {% endfor %}
+    </div>
+</section>
+
+<!-- <input type="button" id="btn1" class="btn-click-action" value="submit" />
+<input type="button" id="btn2" class="btn-click-action" value="submit2" />
+<input type="button" id="btn3" class="btn-click-action" value="submit3" /> -->
+
+{% endblock %}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="Joseph Jiang" content="Volunteer Matching">
+    <!-- Bulma -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/css/bulma-carousel.min.css">
+
+    <link rel="stylesheet" href="../static/css/style.css">
+  </head>
+  <body>
+    {% include "navbar.html" %}
+
+    <!-- Login Modal -->
+    <div class="modal" id="loginModal">
+      {% include "login.html" %}
+    </div>
+
+    <!-- Serves Content Here -->
+    {% block content %}{% endblock %}
+
+    <!-- Footer -->
+    {% include "footer.html" %}
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/js/bulma-carousel.min.js"></script>
+    <script>
+      bulmaCarousel.attach('#carousel-demo', {
+        slidesToScroll: 1,
+        slidesToShow: 2,
+        infinite: true,
+      });
+    </script>
+
+
+    <!-- Custom Jquery Script (Lesson on JS) -->
+    <script src="../static/js/scripts.js"></script>
+  </body>
+</html>

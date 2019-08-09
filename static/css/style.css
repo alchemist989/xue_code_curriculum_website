@@ -1,0 +1,91 @@
+.login-input {
+  /* width: 130px; */
+}
+
+.form-button {
+  width: 80px;
+  height: 35px;
+}
+
+.signup-box {
+  margin: auto;
+  width: 325px;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.3);
+  border-radius: 10px;
+}
+
+.settings-box {
+  margin: auto;
+  width: 325px;
+}
+
+.signup-area {
+  padding: 30px;
+}
+
+.settings-area {
+  padding: 30px;
+}
+
+.composition-hero-image-background {
+    background-image: url('../images/composition.jpg');
+    background-position: center center;
+    background-repeat:  no-repeat;
+    background-size:  cover;
+}
+
+.composition-section-padding {
+  padding-top: 70px;
+}
+
+.composition-section-background {
+  background-color: rgba(226, 226, 226, 0.911);
+}
+
+.composition-container-background {
+  background-color: rgb(243, 243, 243)
+}
+
+.content-title-height {
+  height:51px;
+}
+
+.content-height {
+  height: 110px;
+}
+
+.composition-column-padding {
+  padding:4%!important;
+}
+
+.compositions-title {
+  padding:2.5%;
+  padding-left: 5%;
+}
+
+.composition-container-padding {
+  padding:4%;
+}
+
+.comments-section-background {
+  background-color: #DAE0E6;
+}
+
+.comment-card {
+  border-radius: 10px;
+}
+
+.comment-headers {
+  font-size: 30px;
+  border-bottom:1px solid #A9A9A9;
+}
+
+a {
+  color: black!important;
+}
+
+.biography-title {
+  font-size: 28px;
+  font-weight: 700;
+}

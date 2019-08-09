@@ -1,0 +1,48 @@
+{% extends "index.html" %}
+{% block content %}
+<section class="hero is-primary is-large composition-hero-image-background">
+    <div class="hero-body">
+        <div class="container">
+            <div class="columns is-variable is-centered">
+                <div class="column is-6" style="text-align:center">
+                    <h1 class="title is-2 has-text-weight-light" style="font-size: 75px">
+                        Franz Liszt Compositions
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="section composition-section-background padding-top-section">
+    <div class="container composition-container-background composition-container-padding">
+        <h1 class="title compositions-title has-text-weight-light">Compositions:</h1>
+        <div class="columns is-multiline is-centered is-8">
+            {% for composition in compositions %}
+                <div class="column is-4 column-padding">
+                    <div class="card">
+                        <div class="card-image">
+                            <iframe width="100%" height="200px" src='{{ composition.video_link }}' frameborder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-content content-title-height">
+                                    <p class="title is-4">{{ composition.composition_name }}</p>
+                                    <p class="subtitle is-6">{{ composition.composer }}</p>
+                                </div>
+                            </div>
+                    
+                            <div class="content content-height">
+                                <strong>Description: </strong>{{ composition.description }}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+{% endblock %}
+
